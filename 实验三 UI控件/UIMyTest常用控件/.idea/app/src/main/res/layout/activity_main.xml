@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:background="@drawable/cook"
+            android:gravity="center"
+            android:text="吃了么"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="143dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:src="@drawable/startuser" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入查找的美食或店名"
+            android:maxLines="2"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查 找"
+            android:textAllCaps="false"
+            android:textSize="24sp"/>
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+
+         <ImageButton
+             android:id="@+id/noodle"
+             android:layout_width="225dp"
+             android:layout_height="275dp"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             app:srcCompat="@drawable/noodle" />
+
+
+         <ImageButton
+             android:id="@+id/drink"
+             android:layout_width="157dp"
+             android:layout_height="275dp"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+             app:srcCompat="@drawable/drink" />
+
+         <ImageButton
+             android:id="@+id/icecraem"
+             android:layout_width="157dp"
+             android:layout_height="275dp"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             app:srcCompat="@drawable/icecream" />
+
+
+     </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
