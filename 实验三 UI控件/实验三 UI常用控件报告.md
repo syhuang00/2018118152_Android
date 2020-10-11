@@ -41,3 +41,8 @@ AlertDialog可以在当前的界面弹出一个对话框，这个对话框置顶
 水平方向并列的ImageButton，指定android:orientation="horizontal"可以实现，如下代码：
 
 ![image](https://github.com/syhuang00/2018118152_Android/raw/master/%E5%AE%9E%E9%AA%8C%E4%B8%89%20UI%E6%8E%A7%E4%BB%B6/UI%E7%95%8C%E9%9D%A2%E7%9A%84%E5%AE%9E%E9%AA%8C%E6%88%AA%E5%9B%BE/20101111.png)
+
+总体界面如下图：
+
+![image](https://github.com/syhuang00/2018118152_Android/raw/master/%E5%AE%9E%E9%AA%8C%E4%B8%89%20UI%E6%8E%A7%E4%BB%B6/UI%E7%95%8C%E9%9D%A2%E7%9A%84%E5%AE%9E%E9%AA%8C%E6%88%AA%E5%9B%BE/20101112.png)
+
