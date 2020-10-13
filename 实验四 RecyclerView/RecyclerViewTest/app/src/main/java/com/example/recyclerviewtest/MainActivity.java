@@ -29,26 +29,30 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFruits() {
         for (int i = 0; i < 2; i++) {
-            Fruit apple = new Fruit(getRandomLengthName("Apple"), R.drawable.apple_pic);
+            Fruit apple = new Fruit(getRandomLengthName("苹果"), R.drawable.apple_pic);
             fruitList.add(apple);
-            Fruit banana = new Fruit(getRandomLengthName("Banana"), R.drawable.banana_pic);
+            Fruit banana = new Fruit(getRandomLengthName("香蕉"), R.drawable.banana_pic);
             fruitList.add(banana);
-            Fruit orange = new Fruit(getRandomLengthName("Orange"), R.drawable.orange_pic);
+            Fruit orange = new Fruit(getRandomLengthName("橘子"), R.drawable.orange_pic);
             fruitList.add(orange);
-            Fruit watermelon = new Fruit(getRandomLengthName("Watermelon"), R.drawable.watermelon_pic);
+            Fruit watermelon = new Fruit(getRandomLengthName("西瓜"), R.drawable.watermelon_pic);
             fruitList.add(watermelon);
-            Fruit pear = new Fruit(getRandomLengthName("Pear"), R.drawable.pear_pic);
+            Fruit pear = new Fruit(getRandomLengthName("梨"), R.drawable.pear_pic);
             fruitList.add(pear);
-            Fruit grape = new Fruit(getRandomLengthName("Grape"), R.drawable.grape_pic);
+            Fruit grape = new Fruit(getRandomLengthName("葡萄"), R.drawable.grape_pic);
             fruitList.add(grape);
-            Fruit pineapple = new Fruit(getRandomLengthName("Pineapple"), R.drawable.pineapple_pic);
+            Fruit pineapple = new Fruit(getRandomLengthName("菠萝"), R.drawable.pineapple_pic);
             fruitList.add(pineapple);
-            Fruit strawberry = new Fruit(getRandomLengthName("Strawberry"), R.drawable.strawberry_pic);
+            Fruit strawberry = new Fruit(getRandomLengthName("草莓"), R.drawable.strawberry_pic);
             fruitList.add(strawberry);
-            Fruit cherry = new Fruit(getRandomLengthName("Cherry"), R.drawable.cherry_pic);
+            Fruit cherry = new Fruit(getRandomLengthName("樱桃"), R.drawable.cherry_pic);
             fruitList.add(cherry);
-            Fruit mango = new Fruit(getRandomLengthName("Mango"), R.drawable.mango_pic);
+            Fruit mango = new Fruit(getRandomLengthName("芒果"), R.drawable.mango_pic);
             fruitList.add(mango);
+            Fruit blueberry = new Fruit(getRandomLengthName("蓝莓"), R.drawable.blueberry_pic);
+            fruitList.add(blueberry);
+            Fruit pitaya = new Fruit(getRandomLengthName("火龙果"), R.drawable.pitaya_pic);
+            fruitList.add(pitaya);
         }
     }
 

@@ -18,5 +18,14 @@ public class Fruit {
     public int getImageId() {
         return imageId;
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public String toString() {
+        return "Fruit{" +
+                "name='" + name + '\'' +
+                ", imageId=" + imageId +
+                '}';
+    }
 }

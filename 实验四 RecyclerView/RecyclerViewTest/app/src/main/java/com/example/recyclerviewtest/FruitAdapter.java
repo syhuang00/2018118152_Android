@@ -1,9 +1,13 @@
 package com.example.recyclerviewtest;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.widget.RecyclerView;
+import android.text.AlteredCharSequence;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,10 +43,24 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
         final ViewHolder holder = new ViewHolder(view);
         holder.fruitView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                int position = holder.getAdapterPosition();
-                Fruit fruit = mFruitList.get(position);
+            public void onClick(final View v) {
+                final int position = holder.getAdapterPosition();
+                final Fruit fruit = mFruitList.get(position);
                 Toast.makeText(v.getContext(), "you clicked view " + fruit.getName(), Toast.LENGTH_SHORT).show();
+                final EditText et=new EditText(v.getContext());
+                new AlertDialog.Builder(v.getContext()).setTitle("请输入修改名称：")
+                        .setIcon(android.R.drawable.sym_def_app_icon)
+                        .setView(et)
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Fruit f =mFruitList.get(mFruitList.indexOf(fruit));
+                                f.setName(et.getText().toString());
+                                mFruitList.set(mFruitList.indexOf(fruit),f);
+                                    Toast.makeText(v.getContext(),"成功修改为："+et.getText().toString(),Toast.LENGTH_SHORT).show();
+                                    notifyItemChanged(position);
+                            }
+                        }).setNegativeButton("取消",null).show();
             }
         });
         holder.fruitImage.setOnClickListener(new View.OnClickListener() {
@@ -68,5 +86,6 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
     public int getItemCount() {
         return mFruitList.size();
     }
+
 
 }
