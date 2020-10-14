@@ -9,3 +9,7 @@
 ### 实验三 UI控件
 
 [实验三UI控件报告](https://github.com/syhuang00/2018118152_Android/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%89%20UI%E6%8E%A7%E4%BB%B6/%E5%AE%9E%E9%AA%8C%E4%B8%89%20UI%E5%B8%B8%E7%94%A8%E6%8E%A7%E4%BB%B6%E6%8A%A5%E5%91%8A.md)
+
+### 实验四 RecyclerView
+
+[实验四RecyclerView报告](https://github.com/syhuang00/2018118152_Android/blob/master/%E5%AE%9E%E9%AA%8C%E5%9B%9B%20RecyclerView/%E5%AE%9E%E9%AA%8C%E5%9B%9B%20RecyclerView%E6%8A%A5%E5%91%8A.md)
