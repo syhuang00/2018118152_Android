@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //发送全局广播
                Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
-                sendBroadcast(intent);
+                sendOrderedBroadcast(intent,null);
                 // 发送本地广播
                  intent = new Intent("com.example.broadcasttest.LOCAL_BROADCAST");
                 localBroadcastManager.sendBroadcast(intent);
