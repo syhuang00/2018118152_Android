@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackgroundimg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:id="@+id/findicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/findicon" />
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/findicon"
+            android:inputType="text"
+            android:lines="1"/>
+
+        <ImageView
+            android:id="@+id/addicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/addicon"
+            android:layout_toRightOf="@+id/searchtext"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1"
+        android:layout_below="@+id/sbar"
+        />
+
+    <ScrollView
+        android:id="@+id/userlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fg">></ScrollView>
+
+
+</RelativeLayout>
