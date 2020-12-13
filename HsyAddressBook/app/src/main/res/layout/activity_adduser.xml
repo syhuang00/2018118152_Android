@@ -20,10 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
-            <ImageView
+            <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                app:srcCompat="@mipmap/ic_launcher"
+                android:background="@drawable/photopic"
                 android:id="@+id/head"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"/>

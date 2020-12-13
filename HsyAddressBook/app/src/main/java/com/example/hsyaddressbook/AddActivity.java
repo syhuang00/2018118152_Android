@@ -14,6 +14,7 @@ import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ public class AddActivity extends AppCompatActivity {
     Button addbt;
     EditText nmtext;
     EditText phtext;
-    ImageView imgv;
+    ImageButton imgv;
     Bitmap bmp=null;
 
     @Override
@@ -37,7 +38,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adduser);
         nmtext = (EditText) findViewById(R.id.nmtext);
         phtext = (EditText) findViewById(R.id.phtext);
-        imgv = (ImageView) findViewById(R.id.head);
+        imgv = (ImageButton) findViewById(R.id.head);
         int rsId = getResources().getIdentifier("head", "drawable" , getPackageName());
         imgv.setImageResource(rsId);
         imgv.setOnClickListener(new View.OnClickListener() {

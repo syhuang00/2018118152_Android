@@ -28,6 +28,7 @@
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/findicon"
+            android:hint="  请输入查找联系人姓名"
             android:inputType="text"
             android:lines="1"/>
 

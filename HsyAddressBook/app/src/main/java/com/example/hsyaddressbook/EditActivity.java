@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -25,9 +26,10 @@ import java.io.ByteArrayOutputStream;
 public class EditActivity extends AppCompatActivity {
 
     Button editbt;
+    Button callbt;
     EditText nmtext;
     EditText phtext;
-    ImageView imgv;
+    ImageButton imgv;
     String id;
     UserDao mld;
     Bitmap bmp;
@@ -41,8 +43,9 @@ public class EditActivity extends AppCompatActivity {
         mld = new UserDaoImpl(getApplicationContext());
         nmtext = (EditText) findViewById(R.id.nmtext);
         phtext = (EditText) findViewById(R.id.phtext);
-        imgv = (ImageView) findViewById(R.id.imgv);
+        imgv = (ImageButton) findViewById(R.id.imgv);
         editbt = (Button) findViewById(R.id.editbt);
+        callbt = (Button) findViewById(R.id.callbt);
         id = String.valueOf((Integer)getIntent().getSerializableExtra("id"));
         User user = mld.GetOne(id);
         nmtext.setText(user.getName());
@@ -61,6 +64,15 @@ public class EditActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_PICK,
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent, 1);
+            }
+        });
+        callbt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String num = phtext.getText().toString().trim();
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" +num));
+                startActivity(intent);
             }
         });
         editbt.setOnClickListener(new View.OnClickListener() {
